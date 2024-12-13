@@ -1,12 +1,17 @@
+@import url('themes.css');
+
 .App {
   display: flex;
   max-width: 1440px;
+  width: 100%;
   flex-direction: column;
-  align-items: flex-start;
-  background: var(--White, #FFF);
-  padding: 40px 112px;
+  align-items: center;
   gap: 32px;
-  }
+}
+
+.metrics-containers > * {
+  flex: 1 1;
+}
 
 .metric-item {
   display: flex;
@@ -14,7 +19,6 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
-  flex: 1 0 0;
   border-radius: 8px;
   border: 1px solid var(--Gray-200, #E9EAEB);
   background: var(--White, #FFF);
@@ -30,6 +34,13 @@
   align-self: stretch;
 }
 
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .overview-container {
   display: flex;
   flex-direction: column;
@@ -42,14 +53,16 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 4px;
+  gap: 8px;
   align-self: stretch;
 }
 
 .button-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: flex-end;
+  gap: 16px;
+  width: 100%;
 }
 
 .header {
@@ -63,13 +76,49 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   gap: 4px;
-  flex: 1 0 0;
+  flex: 1 0;
+  width: 100%;
+}
+
+.landing {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.landing .button-container {
+  width: 100%;
+  justify-content: center;
+}
+
+.landing-text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-text h1 {
+  font-size: 60px;
+  text-align: center;
+  line-height: initial;
+}
+
+.landing-text p {
+  width: 65%;
+  text-align: center;
 }
 
 .market-container {
   display: flex;
-  width: 1216px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
@@ -77,7 +126,7 @@
 
 .competitors {
   display: flex;
-  width: 1216px;
+  width: 100%;
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
